@@ -3,6 +3,9 @@ package MavenFramework;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.*;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
@@ -11,7 +14,8 @@ import io.restassured.response.Response;
 
 public class GetRequest {
 
-Properties prop =  new Properties();
+	private static Logger log = LogManager.getLogger(GetRequest.class.getName());
+	Properties prop =  new Properties();
 	
 	@BeforeTest
 	public void getProperties() throws IOException {
@@ -22,6 +26,7 @@ Properties prop =  new Properties();
 	
 	@Test
 	public void getEmployees() {
+		log.info("Host Information "+prop.getProperty("HOST"));
 		RestAssured.baseURI = prop.getProperty("HOST");
 		Response res = given().
 		when().
@@ -29,7 +34,7 @@ Properties prop =  new Properties();
 		then().assertThat().statusCode(200).extract().response();
 		
 		String responseData = res.asString();
-		System.out.println("Get all employees- "+responseData);		
+		log.info("Get all employees- "+responseData);		
 		
 		
 	}

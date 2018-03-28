@@ -2,60 +2,60 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="SuiteSeekers" duration-ms="9902" started-at="2018-03-14T10:16:21Z" finished-at="2018-03-14T10:16:31Z">
+  <suite name="Default suite" duration-ms="8632" started-at="2018-03-25T16:03:36Z" finished-at="2018-03-25T16:03:44Z">
     <groups>
     </groups>
-    <test name="TestSeekers" duration-ms="9902" started-at="2018-03-14T10:16:21Z" finished-at="2018-03-14T10:16:31Z">
+    <test name="Default test" duration-ms="8632" started-at="2018-03-25T16:03:36Z" finished-at="2018-03-25T16:03:44Z">
       <class name="MavenFramework.GetRequest">
-        <test-method status="PASS" signature="getEmployees()[pri:0, instance:MavenFramework.GetRequest@53b32d7]" name="getEmployees" duration-ms="2685" started-at="2018-03-14T10:16:21Z" finished-at="2018-03-14T10:16:23Z">
+        <test-method status="PASS" signature="getEmployees()[pri:0, instance:MavenFramework.GetRequest@53b32d7]" name="getEmployees" duration-ms="3916" started-at="2018-03-25T16:03:36Z" finished-at="2018-03-25T16:03:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getEmployees -->
       </class> <!-- MavenFramework.GetRequest -->
       <class name="MavenFramework.GetRequestOne">
-        <test-method status="PASS" signature="oneEmployee()[pri:0, instance:MavenFramework.GetRequestOne@5442a311]" name="oneEmployee" duration-ms="869" started-at="2018-03-14T10:16:23Z" finished-at="2018-03-14T10:16:24Z">
+        <test-method status="PASS" signature="oneEmployee()[pri:0, instance:MavenFramework.GetRequestOne@5442a311]" name="oneEmployee" duration-ms="695" started-at="2018-03-25T16:03:40Z" finished-at="2018-03-25T16:03:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneEmployee -->
       </class> <!-- MavenFramework.GetRequestOne -->
       <class name="MavenFramework.PostRequest">
-        <test-method status="PASS" signature="postEmployee()[pri:0, instance:MavenFramework.PostRequest@548e7350]" name="postEmployee" duration-ms="795" started-at="2018-03-14T10:16:24Z" finished-at="2018-03-14T10:16:25Z">
+        <test-method status="PASS" signature="postEmployee()[pri:0, instance:MavenFramework.PostRequest@548e7350]" name="postEmployee" duration-ms="727" started-at="2018-03-25T16:03:41Z" finished-at="2018-03-25T16:03:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postEmployee -->
       </class> <!-- MavenFramework.PostRequest -->
       <class name="MavenFramework.PutRequest">
-        <test-method status="PASS" signature="postEmployee()[pri:0, instance:MavenFramework.PutRequest@1a968a59]" name="postEmployee" duration-ms="3866" started-at="2018-03-14T10:16:25Z" finished-at="2018-03-14T10:16:29Z">
+        <test-method status="PASS" signature="postEmployee()[pri:0, instance:MavenFramework.PutRequest@1a968a59]" name="postEmployee" duration-ms="2014" started-at="2018-03-25T16:03:41Z" finished-at="2018-03-25T16:03:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postEmployee -->
       </class> <!-- MavenFramework.PutRequest -->
       <class name="MavenFramework.DeleteRequest">
-        <test-method status="PASS" signature="getProperties()[pri:0, instance:MavenFramework.DeleteRequest@4667ae56]" name="getProperties" is-config="true" duration-ms="17" started-at="2018-03-14T10:16:21Z" finished-at="2018-03-14T10:16:21Z">
+        <test-method status="PASS" signature="getProperties()[pri:0, instance:MavenFramework.DeleteRequest@4667ae56]" name="getProperties" is-config="true" duration-ms="88" started-at="2018-03-25T16:03:36Z" finished-at="2018-03-25T16:03:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProperties -->
-        <test-method status="PASS" signature="getProperties()[pri:0, instance:MavenFramework.GetRequest@53b32d7]" name="getProperties" is-config="true" duration-ms="1" started-at="2018-03-14T10:16:21Z" finished-at="2018-03-14T10:16:21Z">
+        <test-method status="PASS" signature="getProperties()[pri:0, instance:MavenFramework.GetRequest@53b32d7]" name="getProperties" is-config="true" duration-ms="0" started-at="2018-03-25T16:03:36Z" finished-at="2018-03-25T16:03:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProperties -->
-        <test-method status="PASS" signature="getProperties()[pri:0, instance:MavenFramework.GetRequestOne@5442a311]" name="getProperties" is-config="true" duration-ms="0" started-at="2018-03-14T10:16:21Z" finished-at="2018-03-14T10:16:21Z">
+        <test-method status="PASS" signature="getProperties()[pri:0, instance:MavenFramework.GetRequestOne@5442a311]" name="getProperties" is-config="true" duration-ms="0" started-at="2018-03-25T16:03:36Z" finished-at="2018-03-25T16:03:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProperties -->
-        <test-method status="PASS" signature="getProperties()[pri:0, instance:MavenFramework.PostRequest@548e7350]" name="getProperties" is-config="true" duration-ms="1" started-at="2018-03-14T10:16:21Z" finished-at="2018-03-14T10:16:21Z">
+        <test-method status="PASS" signature="getProperties()[pri:0, instance:MavenFramework.PostRequest@548e7350]" name="getProperties" is-config="true" duration-ms="0" started-at="2018-03-25T16:03:36Z" finished-at="2018-03-25T16:03:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProperties -->
-        <test-method status="PASS" signature="getProperties()[pri:0, instance:MavenFramework.PutRequest@1a968a59]" name="getProperties" is-config="true" duration-ms="0" started-at="2018-03-14T10:16:21Z" finished-at="2018-03-14T10:16:21Z">
+        <test-method status="PASS" signature="getProperties()[pri:0, instance:MavenFramework.PutRequest@1a968a59]" name="getProperties" is-config="true" duration-ms="0" started-at="2018-03-25T16:03:36Z" finished-at="2018-03-25T16:03:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getProperties -->
-        <test-method status="PASS" signature="deleteEmployee()[pri:0, instance:MavenFramework.DeleteRequest@4667ae56]" name="deleteEmployee" duration-ms="1598" started-at="2018-03-14T10:16:29Z" finished-at="2018-03-14T10:16:31Z">
+        <test-method status="PASS" signature="deleteEmployee()[pri:0, instance:MavenFramework.DeleteRequest@4667ae56]" name="deleteEmployee" duration-ms="1147" started-at="2018-03-25T16:03:43Z" finished-at="2018-03-25T16:03:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteEmployee -->
       </class> <!-- MavenFramework.DeleteRequest -->
-    </test> <!-- TestSeekers -->
-  </suite> <!-- SuiteSeekers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

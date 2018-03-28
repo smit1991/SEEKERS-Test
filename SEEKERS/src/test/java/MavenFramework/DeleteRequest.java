@@ -6,6 +6,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -13,7 +15,8 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class DeleteRequest {
-Properties prop =  new Properties();
+	private static Logger log = LogManager.getLogger(GetRequest.class.getName());
+	Properties prop =  new Properties();
 	
 	@BeforeTest
 	public void getProperties() throws IOException {
@@ -24,6 +27,7 @@ Properties prop =  new Properties();
 	
 	@Test
 	public void deleteEmployee() {
+	log.info("Host Information "+prop.getProperty("HOST"));
 	RestAssured.baseURI = prop.getProperty("HOST");
 	Response res = given().header("Content-Type","application/json").
 	when().
@@ -32,7 +36,7 @@ Properties prop =  new Properties();
 	extract().response();
 	
 	String responseData = res.asString();
-	System.out.println("Deleted Entry- "+responseData);
+	log.info("Deleted Entry- "+responseData);
 
 	}
 }
