@@ -21,7 +21,7 @@ public class GetRequestOne {
 	@BeforeTest
 	public void getProperties() throws IOException {
 		
-		FileInputStream fis= new FileInputStream("C:\\Users\\$mit\\Desktop\\Seekers_Test\\SEEKERS\\src\\main\\java\\MavenFramework\\env.properties");
+		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\env.properties");
 		prop.load(fis);		
 	}
 	
@@ -35,7 +35,7 @@ public class GetRequestOne {
 		then().assertThat().statusCode(200).extract().response();
 		
 		String responseData = res.asString();
-		log.info("Get Single Employee- "+responseData);	
+		log.info("Get Single Employee- "+responseData+"\n");	
 	}
 	
 }

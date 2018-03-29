@@ -21,7 +21,7 @@ public class PutRequest {
 	@BeforeTest
 	public void getProperties() throws IOException {
 		
-		FileInputStream fis= new FileInputStream("C:\\Users\\$mit\\Desktop\\Seekers_Test\\SEEKERS\\src\\main\\java\\MavenFramework\\env.properties");
+		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\env.properties");
 		prop.load(fis);		
 	}
 	
@@ -37,7 +37,7 @@ public class PutRequest {
 		extract().response();
 		
 		String responseData = res.asString();
-		log.info("Edited Entry- "+responseData);
+		log.info("Edited Entry- "+responseData+"\n");
 					
 	}
 	

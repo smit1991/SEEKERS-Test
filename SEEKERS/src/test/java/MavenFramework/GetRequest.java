@@ -20,7 +20,7 @@ public class GetRequest {
 	@BeforeTest
 	public void getProperties() throws IOException {
 		
-		FileInputStream fis= new FileInputStream("C:\\Users\\$mit\\Desktop\\Seekers_Test\\SEEKERS\\src\\main\\java\\MavenFramework\\env.properties");
+		FileInputStream fis= new FileInputStream(System.getProperty("user.dir")+"\\env.properties");
 		prop.load(fis);		
 	}
 	
@@ -34,10 +34,9 @@ public class GetRequest {
 		then().assertThat().statusCode(200).extract().response();
 		
 		String responseData = res.asString();
-		log.info("Get all employees- "+responseData);		
-		
-		
+		String data[] = responseData.split("}");
+		for (String temp: data){
+	          log.info(temp);
+		}
 	}
-
-	
 }
